@@ -12,13 +12,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowise Chatbot Widget</title>
+    <title>ForgeFlow Chatbot Widget</title>
 </head>
 
 <body>
     <div id="root"></div>
     <script type="module">
-        import Chatbot from './web.js'
+          import Chatbot from './web.js'; // Change to from './web.js' to 'https://localhost:5678/web.js'
         
         // Example initialization:
         // If your .env contains:
@@ -28,9 +28,9 @@
         //
         // Then use the environment variable name as chatflowid:
         Chatbot.init({
-            chatflowid: 'agent1',    // or 'support', 'salesbot', etc.
-            apiHost: window.location.origin
-        })
+            chatflowid: 'c3793f87-667f-4629-917f-464e12d38399', // Add your Flowise chatflowid
+            apiHost: 'https://forgeflow.onrender.com', // Add your Flowise apiHost
+  });
     </script>
 </body>
 
